@@ -1,0 +1,6 @@
+rootProject.name = "docker-demo"
+
+//## start includes ####
+include "hippo-service"
+include "parrot-service"
+//## end includes ######
