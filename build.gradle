@@ -10,7 +10,6 @@ buildscript {
         classpath('se.transmode.gradle:gradle-docker:1.2')
     }
 }
-group = 'slinnik284'
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -31,10 +30,11 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
+group = 'slinnik284'
 task buildDocker(type: Docker, dependsOn: build) {
     push = true
     applicationName = jar.baseName
-    dockerfile = file('src/main/docker/Dockerfile')
+    dockerfile = file('Dockerfile')
     doFirst {
         copy {
             from jar

@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+parrot-service:
+  ribbon:
+    listOfServers: localhost:8081

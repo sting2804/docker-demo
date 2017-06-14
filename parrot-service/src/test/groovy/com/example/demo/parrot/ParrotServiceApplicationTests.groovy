@@ -1,4 +1,4 @@
-package com.example.demo
+package com.example.demo.parrot
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner)
 @SpringBootTest
-class DockerDemoApplicationTests {
+class ParrotServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
